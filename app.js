@@ -4,6 +4,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 
 const routes = require('./routes/index')
+const books = require('./routes/books')
 
 const app = express();
 const port = 3000;
@@ -18,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(express.static('public'));
 
 app.use('/', routes);
-
+app.use('/books', books)
 
 
 

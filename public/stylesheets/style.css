@@ -1,13 +1,30 @@
-header h1 {
+header h1 a {
   font-family: 'Taviraj', serif;
   color: black;
-  margin: 20px;
 }
 
-header h1:hover {
-  color: grey;
+header h1 a {
+  text-decoration: none;
 }
 
 a:hover {
+  color: grey;
   text-decoration: none;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+body {
+  margin: 50px;
+}
+
+.book-img {
+  width: 100px;
+  padding: 10px;
+}
+
+.book-info {
+
 }
